@@ -1,0 +1,42 @@
+{
+  "name": "sos-brasil",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "tsc --noEmit && eslint .",
+    "gen:types": "supabase gen types typescript --project-id ylwzmsyrqfuhoujnwzpv > src/types/database.ts"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^3.36.0",
+    "@emotion/react": "^11.14.0",
+    "@googlemaps/js-api-loader": "^2.1.1",
+    "@next/third-parties": "^16.2.10",
+    "@supabase/ssr": "^0.8.0",
+    "@supabase/supabase-js": "^2.97.0",
+    "@vis.gl/react-google-maps": "^1.9.0",
+    "fuse.js": "^7.5.0",
+    "next": "^16.2.10",
+    "react": "19.2.7",
+    "react-dom": "19.2.7",
+    "react-hook-form": "^7.53.1",
+    "react-icons": "^5.6.0",
+    "react-use": "^17.6.1",
+    "use-mask-input": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.65.4",
+    "@types/node": "^22.7.5",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-import": "^2.32.0",
+    "supabase": "^2.113.0",
+    "typescript": "^5.6.3"
+  }
+}
