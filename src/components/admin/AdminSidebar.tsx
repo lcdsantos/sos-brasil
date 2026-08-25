@@ -19,6 +19,7 @@ import {
   RiFlashlightFill,
   RiHandHeartFill,
   RiHomeHeartFill,
+  RiGroupFill,
   RiNewspaperFill,
   RiRoadMapFill,
   RiUser3Fill,
@@ -48,6 +49,12 @@ const NAV = [
     href: "/admin/abrigos",
     icon: <RiHomeHeartFill />,
     label: "Abrigos",
+  },
+  {
+    roles: ["admin", "volunteer"],
+    href: "/admin/abrigados",
+    icon: <RiGroupFill />,
+    label: "Abrigados",
   },
   {
     roles: ["admin", "volunteer"],
